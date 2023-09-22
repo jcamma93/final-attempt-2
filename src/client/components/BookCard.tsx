@@ -22,7 +22,7 @@ const BookCard = ({ book, isSingle }: BookCardProps) => {
                 </div>
                 <div className="card-footer">Price: {book?.price}</div>
                 {isSingle && (
-                    <button onClick={() => nav(`/books/${book.id}/edit`)} className='btn btn-secondary'>
+                    <button onClick={() => nav(`/books/${book.id}/edit`)} className='btn btn-primary'>
                         Edit
                     </button>
                 )}
