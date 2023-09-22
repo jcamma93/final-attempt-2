@@ -4,8 +4,11 @@ import Home from './views/Home';
 import Login from './views/Login';
 import Register from './views/Register';
 import Pizza from './views/Pizza';
+import Books from './views/Books';
 
 import Navbar from './components/Navbar';
+
+
 
 
 
@@ -19,6 +22,7 @@ const App = () => {
 			<Route path="/login" element={<Login />} />
 			<Route path="/register" element={<Register />} />
 			<Route path="/pizza" element={<Pizza />} />
+			<Route path="/books" element={<Books />} />
 			<Route path='*' element={<h1>404 An error occured</h1>} />
 			</Routes>
 			</main> 
