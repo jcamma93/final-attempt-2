@@ -3,10 +3,12 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { BookWithCategory } from '../../types';
 import BookCard from '../components/BookCard';
+import { useNavigate } from 'react-router-dom';
 
 const SingleBook = () => {
     const { id } = useParams();
     const [book, setBook] = useState<BookWithCategory>();
+    const nav = useNavigate();
 
     useEffect(() => {
         async function getBook() {
@@ -31,6 +33,9 @@ const SingleBook = () => {
         <div>
             <h1 className='text-secondary'>Here's a closer look!:</h1>
             {book && <BookCard isSingle book={book} />}
+            <button onClick={() => nav('/purchase')} className='btn btn-warning'>
+                        Buy Now!
+                    </button>
         </div>
     )
 

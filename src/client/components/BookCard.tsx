@@ -32,10 +32,6 @@ const BookCard = ({ book, isSingle }: BookCardProps) => {
 
 }
 
-
-
-
-
 export default BookCard;
 
 interface BookCardProps {

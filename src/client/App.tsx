@@ -8,6 +8,7 @@ import Books from './views/Books';
 import SingleBook from './views/SingleBook';
 import Edit from './views/Edit';
 import Create from './views/Create';
+import Purchase from './views/Purchase';
 
 import Navbar from './components/Navbar';
 import PrivateRoute from './components/PrivateRoute';
@@ -30,6 +31,7 @@ const App = () => {
 			<Route path="/books/:id" element={<PrivateRoute><SingleBook /></PrivateRoute>} />
 			<Route path="/books/:id/edit" element={<PrivateRoute><Edit /></PrivateRoute>} />
 			<Route path="/create" element={<PrivateRoute><Create /></PrivateRoute>} />
+			<Route path="/purchase" element={<PrivateRoute><Purchase /></PrivateRoute>} />
 			<Route path='*' element={<h1>404 An error occured</h1>} />
 			</Routes>
 			</main> 

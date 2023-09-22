@@ -55,7 +55,7 @@ const Create = () => {
                     <option  key={`category-${c.id}`} value={c.id}>{c.name}</option>
                 ))}
                 </select>
-                    <button disabled={!title || !author || !price } onClick={handleSubmit} className="btn btn-dark">
+                    <button disabled={!title || !author || !price} onClick={handleSubmit} className="btn btn-dark">
                         Add Book
                     </button>
                 </form>
