@@ -3,7 +3,7 @@ import * as React from 'react';
 const Home = ( props: HomeProps) => {
     return (
         <div>
-            <h1 className='text-center display-1'>Home Page</h1>
+            <h1 className='text-center display-1'>Welcome to my bookstore!</h1>
         </div>
     );
 };

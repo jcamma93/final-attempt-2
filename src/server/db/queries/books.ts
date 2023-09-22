@@ -5,7 +5,7 @@ const getAll = () => Query<BookWithCategory[]>(`
     SELECT b.*, c.name
         FROM Books b
         Join Categories c
-        ON b.categoryid=c.id`);
+        ON b.categoryid=c.id ORDER BY price ASC`);
 
 const getOne = (id: Book['id']) => Query<BookWithCategory[]>(`
     SELECT b.*, c.name
