@@ -6,6 +6,3 @@ node_modules/
 # production bundles
 dist/
 public/js/app.js
-
-# environment variables
-.env
