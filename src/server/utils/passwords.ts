@@ -1,11 +1,11 @@
-// import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcrypt';
 
-// export function generateHash(password: string) {
-//     const salt = bcrypt.genSaltSync(12);
-//     const hash = bcrypt.hashSync(password, salt);
-//     return hash;
-// }
+export function generateHash(password: string) {
+    const salt = bcrypt.genSaltSync(12);
+    const hash = bcrypt.hashSync(password, salt);
+    return hash;
+}
 
-// export function compareHash(password: string, hashed: string) {
-//     return bcrypt.compareSync(password, hashed);
-// }
+export function compareHash(password: string, hashed: string) {
+    return bcrypt.compareSync(password, hashed);
+}
