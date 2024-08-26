@@ -1,10 +1,11 @@
 import * as express from 'express';
 import Books from '../../db/queries/books';
 import { Book } from '../../../types';
+import { tokenCheck } from '../../middlewares/auth.mw';
 
 const booksRouter = express.Router();
 
-booksRouter.get('/', async (req, res) => {
+booksRouter.get('/', tokenCheck, async (req, res) => {
     try {
         const books = await Books.all();
         res.json(books)
